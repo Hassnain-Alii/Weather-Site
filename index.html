@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar flex-se">
+        <input type="text" placeholder="Enter city name..." />
+        <button><img src="images/search.png" alt="img" /></button>
+      </div>
+      <div class="invalid-city">
+        <p>invalid city name</p>
+      </div>
+      <div class="weather-container">
+        <div class="weather-info bold">
+          <img class="weather-img" alt="img" />
+          <p id="temp">22°C</p>
+          <p id="city">Lahore</p>
+        </div>
+        <div class="details flex-sa">
+          <div class="humidity flex-se">
+            <img src="images/humidity.png" alt="img" />
+            <div class="humidity-info bold">
+              <p id="humidity-per">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind flex-sb">
+            <img src="images/wind.png" alt="img" />
+            <div class="wind-info bold">
+              <p id="wind-speed">5.6 KM/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
